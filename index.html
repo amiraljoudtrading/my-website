@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title >شركة أمير الجود للتجارة العامة</title>
+  <meta name="description" content="شركة أمير الجود للتجارة  العامة: استيراد وتصدير وتوريد سلع عامة. خدمات موثوقة وسلسة للشركات والتجار." />
+  <!-- Open Graph بسيط للمشاركة -->
+  <meta property="og:title" content="شركة أمير الجود للتجارة العامة" />
+  <meta property="og:description" content="استيراد وتصدير وتوريد سلع عامة." />
+  <meta property="og:type" content="website" />
+  <style>
+    /* --- قاعدة أساسية --- */
+    :root{
+      --accent:#2e2edf;
+      --muted:#667186;
+      --card:#ffffff;
+      --bg:#f4f6fb;
+      --maxw:1100px;
+      --radius:12px;
+      font-family: "Segoe UI", Tahoma, Arial, "Noto Naskh Arabic", sans-serif;
+    }
+    html,body{height:100%;}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:#036cc2;
+      line-height:1.6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    .container{
+      max-width:var(--maxw);
+      margin:0 auto;
+      padding:24px;
+    }
+
+    /* Header */
+    header{
+      background:linear-gradient(90deg, rgba(11,113,235,0.07), rgba(11,113,235,0.02));
+      border-radius:var(--radius);
+      padding:14px 20px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:20px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    .logo{
+      width:56px;height:56px;
+      border-radius:10px;
+      background:var(--accent);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:rgb(255, 255, 255);
+      font-weight:700;
+      box-shadow:0 6px 18px rgba(11,113,235,0.12);
+    }
+    nav ul{list-style:none;margin:0;padding:0;display:flex;gap:12px;align-items:center;}
+    nav a{
+      text-decoration:none;color:var(--accent);padding:8px 12px;border-radius:8px;font-weight:600;
+    }
+    nav a:hover{background:rgba(11,113,235,0.06);}
+
+    /* Hero */
+    .hero{
+      display:grid;
+      grid-template-columns:1fr 380px;
+      gap:20px;
+      align-items:center;
+      margin-bottom:24px;
+    }
+    .hero-card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:28px;
+      box-shadow:0 6px 30px rgba(15,23,42,0.06);
+    }
+    .hero h1{margin:0 0 10px 0;font-size:28px;}
+    .hero p.lead{color:var(--muted);margin:0 0 18px 0;}
+
+    .cta{
+      display:inline-block;
+      background:var(--accent);
+      color:white;
+      padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:700;
+    }
+
+    /* Services / Products */
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:20px;}
+    .card{background:var(--card);border-radius:12px;padding:16px;box-shadow:0 6px 20px rgba(15,23,42,0.04);}
+    .card h3{margin:0 0 8px 0;}
+    .muted{color:var(--muted);font-size:14px;}
+
+    /* Testimonials */
+    .testimonials{display:flex;gap:12px;overflow:auto;padding-bottom:6px;}
+    .testimonial{min-width:220px;padding:14px;border-radius:10px;background:linear-gradient(180deg,#fff,#f8fbff);box-shadow:0 6px 18px rgba(10,20,40,0.04);}
+
+    /* Contact form */
+    form{display:grid;gap:10px;}
+    label{font-size:14px;font-weight:600;}
+    input,textarea,select{
+      padding:10px;border-radius:8px;border:1px solid #e6e9ef;font-size:14px;
+      width:100%;box-sizing:border-box;
+    }
+    .row{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+    .footer{margin-top:22px;padding:18px;border-radius:10px;text-align:center;color:var(--muted);}
+
+    /* Footer */
+    footer{margin-top:20px;padding:14px 10px;color:var(--muted);}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .grid{grid-template-columns:repeat(2,1fr);}
+      .row{grid-template-columns:1fr;}
+    }
+    @media (max-width:560px){
+      .grid{grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header role="banner" aria-label="رأس الموقع" >
+      
+  <div class="brand" style="display:flex;align-items:center;gap:10px;">
+    <img src="images/WhatsApp Image 2025-10-23 at 3.50.08 AM.jpeg" alt="شعار شركة أمير الجود" style="width:50px;height:50px;border-radius:8px;object-fit:cover;">
+ 
+        <div >
+          <div style="font-weight:800">شركة أمير الجود للتجارة  العامة</div>
+          <div class="muted" style="font-size:13px">استيراد — تصدير — توريد</div>
+        </div> </div>
+   
+      
+      <nav role="navigation" aria-label="القائمة الرئيسية">
+        <ul>
+          <li><a href="#home">الرئيسية</a></li>
+          <li><a href="#about">من نحن</a></li>
+          <li><a href="#services">خدماتنا</a></li>
+          <li><a href="#products">منتجات</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+        </ul>   
+        <button id="langBtn" style="background:#0b71eb;color:white;border:none;padding:6px 12px;border-radius:8px;cursor:pointer;">
+  English
+</button></div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="hero-card">
+        <h1 id="hero-heading">حلول تجارة عامة موثوقة وسريعة</h1>
+        <p class="lead">نحن نربط الموردين بالمشترين محليًا ودوليًا. استيراد، تصدير، خدمات لوجستية واستشارات تجارية بخبرة طويلة.</p>
+        <ul style="margin:0 0 16px 0;padding-left:18px;color:var(--muted)">
+          <li>شبكة موردين عالمية</li>
+          <li>شحن وتتبع كامل</li>
+          <li>قنوات دفع آمنة</li>
+        </ul>
+        <a class="cta" href="#contact">  طلب إستفسار</a>
+      </div>
+
+      <aside class="card" aria-label="معلومات سريعة">
+        <h3>تفاصيل سريعة</h3>
+        <p class="muted">موقعنا: دبي — الإمارات</p>
+        <p class="muted">البريد الإلكتروني: amiraljoud.trading@gmail.com</p>
+        <p style="margin-top:12px"><strong>أوقات العمل:</strong><br/>الأثنين — الخميس 8:00 — 16:00</p>
+      </aside>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="card" aria-labelledby="about-heading" style="margin-bottom:18px;">
+      <h2 id="about-heading">من نحن</h2>
+      <p class="muted">تأسست شركة أمير الجود للتجارة العامة بهدف تقديم حلول متكاملة للتوريد والتوزيع. لدينا خبرة في قطاعات متعددة من السلع الاستهلاكية إلى المواد الصناعية وتشمل:منتجات التجميل,منتجات التنظيف والتطهير,المواد الأولية لصناعة المنظفات,الألبسة والأكسسوارات,الأجهزة الكهربائية والإلكترونية ,معدات و الاَت التصنيع وغيرها.</p>
+    </section>
+
+    <!-- Services / Products -->
+    <section id="services" aria-labelledby="services-heading">
+      <h2 id="services-heading" style="margin-bottom:10px;">خدماتنا</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>استيراد وتخليص جمركي</h3>
+          <p class="muted">التفاوض مع الموردين، متابعة الشحنات والتخليص لدى الجمارك.</p>
+        </div>
+        <div class="card">
+          <h3>تصدير وتوزيع</h3>
+          <p class="muted">حلول لتصدير منتجاتك إلى أسواق جديدة مع إدارة اللوجستيات.</p>
+        </div>
+        <div class="card">
+          <h3>خدمات لوجستية</h3>
+          <p class="muted">شحن بحري، جوي وبرّي مع تعقب حصري وخيارات تخزين.</p>
+        </div>
+      </div>
+<section id="products" style="padding:40px 0;text-align:center;">
+  <h2 style="font-size:24px;margin-bottom:20px;">المنتجات</h2>
+
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;">
+    
+    <div class="card" style="width:250px;padding:10px;border:1px solid #ddd;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+      <img src="images/Cleaning products.jpg" alt="منتجات التنظيف" style="width:100%;height:160px;object-fit:cover;border-radius:8px;">
+      <h3 style="margin-top:10px;">مواد التنظيف والتطهير</h3>
+      <p class="muted">المنظفات والمطهرات والصابون.</p>
+    </div>
+
+    <div class="card" style="width:250px;padding:10px;border:1px solid #ddd;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+      <img src="images/Cosmetics.jpg" alt="مستحضرات التجميل" style="width:100%;height:160px;object-fit:cover;border-radius:8px;">
+      <h3 style="margin-top:10px;">مستحضرات التجميل</h3>
+      <p class="muted">مستحضرات التجميل بأنواعها.</p>
+    </div> 
+
+    <div class="card" style="width:250px;padding:10px;border:1px solid #ddd;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+      <img src="images/pexels-cottonbro-5532664.jpg" alt="معدات صناعية" style="width:100%;height:160px;object-fit:cover;border-radius:8px;">
+      <h3 style="margin-top:10px;">معدات صناعية</h3>
+      <p class="muted">معدات وقطع غيار صناعية موثوقة.</p>
+    </div>
+
+    <div class="card" style="width:250px;padding:10px;border:1px solid #ddd;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+      <img src="images/Chemical materials.jpg" alt="مواد كيميائية" style="width:100%;height:160px;object-fit:cover;border-radius:8px;">
+      <h3 style="margin-top:10px;">مواد كيميائية</h3>
+      <p class="muted">مواد أولية لصناعة المنظفات والصابون.</p>
+    </div>
+
+    <div class="card" style="width:250px;padding:10px;border:1px solid #ddd;border-radius:12px;box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+      <img src="images/Clothes.jpg" alt=" ملابس" style="width:100%;height:160px;object-fit:cover;border-radius:8px;">
+      <h3 style="margin-top:10px;"> ملابس وأكسسوارات</h3>
+      <p class="muted"> ملابس وأكسسوارات .</p>
+    </div>
+
+  </div>
+</section>
+    </section>
+
+    <!-- Testimonials -->
+    <section style="margin-top:18px;">
+      <h2 style="margin-bottom:10px;">آراء بعض عملائنا</h2>
+      <div class="testimonials" role="list">
+        <div class="testimonial" role="listitem">
+          <strong>شركة DXN</strong>
+          <p class="muted">"سرعة في التوريد وجودة في الخدمات — تجربة ممتازة."</p>
+        </div>
+        <div class="testimonial" role="listitem">
+          <strong> شركة الميقات</strong>
+          <p class="muted">"تعاون مستمر واحترافية في التعامل مع الشحن والجمارك."</p>
+        </div>
+        <div class="testimonial" role="listitem">
+          <strong>تاجر محلي</strong>
+          <p class="muted">"أسعار تنافسية وخدمة ما بعد البيع داعمة."</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" style="margin-top:18px;">
+      <h2 style="margin-bottom:10px;">تواصل معنا</h2>
+      <div class="card">
+        <form id="contactForm" onsubmit="return handleSubmit(event)" novalidate>
+          <div class="row">
+            <div>
+              <label for="name">الاسم الكامل</label>
+              <input id="name" name="name" type="text" required placeholder="اسمك" />
+            </div>
+            <div>
+              <label for="company">اسم الشركة</label>
+              <input id="company" name="company" type="text" placeholder="اختياري" />
+            </div>
+          </div>
+
+          <label for="email">البريد الإلكتروني</label>
+          <input id="email" name="email" type="email" required placeholder="you@example.com" />
+
+          <label for="service">نوع الطلب</label>
+          <select id="service" name="service" required>
+            <option value="">اختر...</option>
+            <option>استيراد</option>
+            <option>تصدير</option>
+            <option>شحن ولوجستيات</option>
+            <option>استعلام عام</option>
+          </select>
+
+          <label for="message">نص الرسالة</label>
+          <textarea id="message" name="message" rows="5" required placeholder="أخبرنا بطلبك أو استفسارك"></textarea>
+
+          <div style="display:flex;gap:10px;align-items:center;">
+            <button type="submit" style="background:var(--accent);color:white;padding:10px 14px;border-radius:10px;border:none;font-weight:700;cursor:pointer">
+              أرسل
+            </button>
+            <div id="formStatus" class="muted" aria-live="polite"></div>
+          </div>
+        </form>
+
+        <div class="footer">
+          
+           <p><strong src="images/whatsapp.png"style="width: 10px;height: 10px;">واتساب:</strong> 544892556 971+  —  <strong>📧:</strong> amiraljoud.trading@gmail.com</p> 
+          <p class="muted">© <span id="year"></span> شركةأمير الجود للتجارة العامة. كل الحقوق محفوظة.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div class="muted">العنوان:الإمارات العربية المتحدة_دبي</div>
+        <div style="display:flex;gap:8px;">
+          <a href="#" class="muted" aria-label="لينكدإن">لينكدإن</a>
+          <a href="#" class="muted" aria-label="فيسبوك">فيسبوك</a>
+          <a href="#" class="muted" aria-label="تويتر">تويتر</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // ضع السنة في التذييل
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // تحقق بسيط وإرسال (نموذجي: هنا سنعرض رسالة ولا نرسل فعليًا)
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const service = document.getElementById('service').value;
+      const message = document.getElementById('message').value.trim();
+      const status = document.getElementById('formStatus');
+
+      // تحقق رقمي بسيط: ثبّت قواعد أكثر حسب حاجتك
+      if(!name || !email || !service || !message){
+        status.textContent = 'يرجى ملء كافة الحقول المطلوبة.';
+        status.style.color = 'crimson';
+        return false;
+      }
+
+      // نمط بريد إلكتروني بسيط
+      const emailPattern = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;
+      if(!emailPattern.test(email)){
+        status.textContent = 'الرجاء إدخال بريد إلكتروني صالح.';
+        status.style.color = 'crimson';
+        return false;
+      }
+
+      // هنا يمكن استدعاء API خاص بك (مثلاً fetch إلى endpoint في الخادم)
+      // بما أننا نعمل بملف ثابت، سنعرض رسالة نجاح مؤقتة:
+      status.style.color = 'green';
+      status.textContent = 'تم إرسال الطلب! سنعاود التواصل قريبًا.';
+      // إعادة تهيئة النموذج بعد 2 ثانية (محاكاة)
+      setTimeout(()=>{ document.getElementById('contactForm').reset(); status.textContent=''; }, 2200);
+      return false;
+    }
+  </script>
+  <script>
+let currentLang = "ar";
+
+const translations = {
+  ar: {
+    heroTitle: "حلول تجارة عامة موثوقة وسريعة",
+    aboutTitle: "من نحن",
+    servicesTitle: "خدماتنا",
+    contactTitle: "تواصل معنا",
+    prod1: "مواد غذائية",
+    prod2: "مواد بناء",
+    prod3: "معدات صناعية",
+  },
+  en: {
+    heroTitle: "Reliable and Fast Trading Solutions",
+    aboutTitle: "About Us",
+    servicesTitle: "Our Services",
+    contactTitle: "Contact Us",
+    prod1: "Food Products",
+    prod2: "Building Materials",
+    prod3: "Industrial Equipment",
+  }
+};
+
+document.getElementById("langBtn").onclick = function() {
+  currentLang = currentLang === "ar" ? "en" : "ar";
+  const t = translations[currentLang];
+
+  // غيّر اتجاه النص واتجاه الصفحة
+  document.documentElement.dir = currentLang === "ar" ? "rtl" : "ltr";
+  document.documentElement.lang = currentLang;
+
+  // حدّث النصوص حسب المعرفات (id)
+  document.getElementById("hero-heading").textContent = t.heroTitle;
+  document.getElementById("about-heading").textContent = t.aboutTitle;
+  document.getElementById("services-heading").textContent = t.servicesTitle;
+  document.getElementById("contactTitle").textContent = t.contactTitle;
+  document.getElementById("prod1Title").textContent = t.prod1;
+  document.getElementById("prod2Title").textContent = t.prod2;
+  document.getElementById("prod3Title").textContent = t.prod3;
+
+  // عدّل اسم الزر
+  this.textContent = currentLang === "ar" ? "English" : "العربية";
+};
+</script>
+</body>
+</html>
