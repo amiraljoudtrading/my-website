@@ -9,7 +9,13 @@
   <meta property="og:title" content="شركة أمير الجود للتجارة العامة" />
   <meta property="og:description" content="استيراد وتصدير وتوريد سلع عامة." />
   <meta property="og:type" content="website" />
+  
   <style>
+
+.social-icons a i {
+  color: #fff !important;/*يثبت لون الأيقونة أبيض فوق الخلفية الملونة*/
+}
+
     /* --- قاعدة أساسية --- */
     :root{
       --accent:#2e2edf;
@@ -112,10 +118,83 @@
     .row{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
     .footer{margin-top:22px;padding:18px;border-radius:10px;text-align:center;color:var(--muted);}
 
-    /* Footer */
-    footer{margin-top:20px;padding:14px 10px;color:var(--muted);}
+/* ======================= */
+/*  الفوتر + الأيقونات فقط */
+/* ======================= */
 
-    /* Responsive */
+footer {
+  background-color: #2d30c7;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 25px 0;
+  margin-top: 50px;
+  font-family: "Cairo", sans-serif;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  color: rgb(0, 0, 0);
+  border-radius: 50%;
+  font-size: 24px;
+  transition: all 0.3s ease;
+  background-clip: padding-box !important;
+  -webkit-background-clip: padding-box !important;
+  background-origin: border-box !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+/* 🎨 ألوان المنصات */
+.social-icons a.facebook {
+  background-color: #1877f2 !important;
+}
+
+.social-icons a.instagram {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4) !important;
+}
+
+.social-icons a.whatsapp {
+  background-color: #000000 !important;
+}
+
+.social-icons a.tiktok {
+  background-color: linear-gradient(45deg, #25F4EE 0%, #000000 50%, #FE2C55 100%) !important;
+}
+
+.social-icons a.email {
+  background-color: #2146c2 !important;
+}
+
+.social-icons a i {
+  color: #fff !important;
+}
+
+/* تأثير عند المرور */
+.social-icons a:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 4px 12px rgba(5, 243, 5, 0.4);
+}
+
+/* نص صغير أسفل الأيقونات */
+.footer-text {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #fff7f7;
+}
+
+/* Responsive */
     @media (max-width:900px){
       .hero{grid-template-columns:1fr;}
       .grid{grid-template-columns:repeat(2,1fr);}
@@ -124,7 +203,11 @@
     @media (max-width:560px){
       .grid{grid-template-columns:1fr;}
     }
-  </style>
+  </style> 
+  <!-- استدعاء مكتبة الأيقونات  -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
   <div class="container">
@@ -294,27 +377,26 @@
             <div id="formStatus" class="muted" aria-live="polite"></div>
           </div>
         </form>
-
-        <div class="footer">
-          
-           <p><strong src="images/whatsapp.png"style="width: 10px;height: 10px;">واتساب:</strong> 544892556 971+  —  <strong>📧:</strong> amiraljoud.trading@gmail.com</p> 
-          <p class="muted">© <span id="year"></span> شركةأمير الجود للتجارة العامة. كل الحقوق محفوظة.</p>
-        </div>
-      </div>
+ </div>
     </section>
+     
 
-    <footer>
-      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
-        <div class="muted">العنوان:الإمارات العربية المتحدة_دبي</div>
-        <div style="display:flex;gap:8px;">
-          <a href="#" class="muted" aria-label="لينكدإن">لينكدإن</a>
-          <a href="#" class="muted" aria-label="فيسبوك">فيسبوك</a>
-          <a href="#" class="muted" aria-label="تويتر">تويتر</a>
-        </div>
-      </div>
-    </footer>
+<footer>
+<div class="social-icons">
+  <a href="mailto:amiraljoudtrading@gmail.com"
+  class="email" title="البريد الإلكتروني"><i class="fas fa-envelope"></i></a>
+<a href="https://www.facebook.com"target="_blank" title="فيسبوك"><i class="fab fa-facebook"></i></a>
+
+<a herf="https://www.instagram.com"target="_blank"title="إنستغرام"><i class="fab fa-instagram"></i></a>
+<a href="https://www.tiktok.com"target="_blank" title="تيك توك"><i class="fab fa-tiktok"></i></a>
+
+<a href="https://wa.me/971544892556"target="_blank"title="واتساب"><i class="fab fa-whatsapp"></i></a>
+</div>
+
+<div class="footer-text">شركةأمير الجود للتجارة العامة جميع الحقوق محفوظ©|2025.
+</div>
+</footer>
   </div>
-
   <script>
     // ضع السنة في التذييل
     document.getElementById('year').textContent = new Date().getFullYear();
